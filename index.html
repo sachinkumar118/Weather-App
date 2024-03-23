@@ -1,17 +1,59 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>weather updates</title>
-   
-  </head>
-  <body>
-    <h1>Search the weather details of different cities:</h1>
-    <form action="/" method="post">
-      <label for="cityname" class="sachin">Enter the city name :</label>
-      <input type="text" name="cityname" id="cityname">
-      <button type="submit" name="submit">Go</button>
- </form>
-  </body>
-  
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+</head>
+
+<body>
+    <!-- Heading section -->
+    <div class="heading">
+        <h1>Weather</h1>
+    </div>
+
+    <!-- Main content section -->
+    <div class="card">
+        <!-- Search bar section -->
+        <div class="search">
+            <input type="text" placeholder="Enter City Name" spellcheck="false">
+            <button><img src="images/search.png" alt="search"></button>
+        </div>
+
+        <!-- Error message section -->
+        <div class="error">
+            <p>Invalid City Name</p>
+        </div>
+
+        <!-- Weather details section -->
+        <div class="weather">
+            <img src="images/search.png" class="weather-icon" id="sn">
+            <h1 class="temp"> 16°C</h1>
+            <h2 class="city">Chennai</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="images/humidity.png" alt="">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images/wind.png" alt="">
+                    <div>
+                        <p class="wind">15 Kmph</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer>Designed by Sachin</footer>
+<script src="scripts.js"></script><!-- Link to Javascript file -->
+</body>
+
 </html>
